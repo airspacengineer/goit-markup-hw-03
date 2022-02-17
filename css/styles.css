@@ -33,9 +33,6 @@ a {
   line-height: 1.19;
   text-decoration: none;
 }
-.accent {
-  color: var(--accent-color);
-}
 img {
   display: block;
 }
