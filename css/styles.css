@@ -12,6 +12,7 @@
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
 }
+/* ОБЩИЕ НАСТРОЙКИ */
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
@@ -38,14 +39,41 @@ a {
 img {
   display: block;
 }
-.conteiner {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
 }
-.conteiner.header {
+/* ОБЩИЕ НАСТРОЙКИ КОНЕЦ */
+/* LOGOTYPE */
+ .logo-webblue {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.logo-studioblack{
+  color: var(--brand-black);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.logo-studiowhite {
+  color: var(--hero-white);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+} 
+/* LOGOTYPE */
+.container.header {
   display: flex;
   align-items: center;
 
@@ -85,7 +113,7 @@ img {
 .site-nav a:focus {
   color: var(--accent-color);
 }
-header .conteiner {
+header .container {
   margin-top: 0px;
 }
 ul,
@@ -132,7 +160,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-button {
+.hero-btn {
   color: #ffffff;
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
@@ -149,8 +177,8 @@ p {
   border: none;
   cursor: pointer;
 }
-.hero-button:hover,
-.hero-button:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: var(--btn-hov-foc);
 }
 h2 {
@@ -159,8 +187,14 @@ h2 {
   line-height: 1.17;
   text-align: center;
 }
-/*Особенности*/
-.section-features {
+/* BENEFITS */
+.benefits-list {
+  width: 270px;
+}
+.benefits-list:not(:last-child){
+  margin-right: 30px; 
+}
+.benefits-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -186,23 +220,23 @@ h2 {
 .features .item:last-child {
   margin-right: 0;
 }
-.features-text {
-  color: var(--secondary-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  width: 270px;
-}
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.features-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 .section-title {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-/* Чем мы занимаемся */
+/* WEDOING START */
 .section-areas-of-work {
   padding-top: 0;
   padding-bottom: 94px;
@@ -296,7 +330,7 @@ h3 {
 /*Стили для portfolio.css*/
 
 /*Фильтр*/
-.section-portfolio {
+.portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
